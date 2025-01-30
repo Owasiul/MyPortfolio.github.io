@@ -181,14 +181,14 @@ body {
   height: 350px;
   object-fit: cover;
 }
-  /* about btn */
+/* about btn */
 .Portfolio-btn {
-    background: rgb(53, 34, 195);
-    background: linear-gradient(
-      63deg,
-      rgba(53, 34, 195, 1) 0%,
-      rgba(45, 224, 253, 1) 100%
-    );
+  background: rgb(53, 34, 195);
+  background: linear-gradient(
+    63deg,
+    rgba(53, 34, 195, 1) 0%,
+    rgba(45, 224, 253, 1) 100%
+  );
 }
 /* about responsive */
 @media screen and (max-width: 768px) {
@@ -206,14 +206,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
   }
   .about-img {
     width: 50%;
     align-items: center;
     margin-top: 3rem;
     display: flex;
-
   }
   .about-img img {
     width: 250px;
@@ -230,9 +229,11 @@ body {
     color: #000;
     transition: background-color 0.3s ease;
   }
-  
+
   .gradient-border:hover {
-    background-color: rgba(0, 0, 0, 0.1);}
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
 @media screen and (max-width: 425px) {
   .about {
     width: 100%;
@@ -256,4 +257,24 @@ body {
     height: 150px;
     object-fit: cover;
   }
+}
+/* portfolio showcase */
+.p-header p {
+  width: 50%;
+}
+.t-gradient {
+  color: rgb(245, 147, 19);
+  color: linear-gradient(
+    63deg,
+    rgba(255, 145, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+/* portfolio-box */
+.portfolio-box {
+  background: rgb(7, 11, 36);
+  background: linear-gradient(86deg, rgba(7, 11, 36) 0%, rgba(7, 12, 36) 100%);
+}
+.portfolio-item :hover{
+  transform: scale(0.9);
 }
