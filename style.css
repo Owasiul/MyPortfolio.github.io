@@ -280,6 +280,12 @@ body {
   background-color: #c2181854;
   transform: scale(0.9);
 }
+.txt-edit:hover{
+  transform: scale(0);
+}
+.fa-code:hover , .fa-medal:hover , .fa-microchip:hover{
+  transform: scale(0);
+}
 /* portfolio card */
 .card {
   background-color: #1e1e1e;
