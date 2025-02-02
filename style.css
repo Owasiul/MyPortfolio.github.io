@@ -262,6 +262,13 @@ body{
 .p-header p {
   width: 50%;
 }
+@media screen and (max-width: 768px) {
+  .p-header p {
+    width: 100%;
+    text-align: center;
+  }
+  
+}
 .t-gradient {
   color: rgb(245, 147, 19);
   color: linear-gradient(
