@@ -1,358 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Owasiul's Portfolio</title>
-  </head>
-  <body>
-    <!-- header start -->
-    <header>
-      <!-- nav start -->
-      <nav class="navbar navbar-expand-lg w-100 custom-navbar">
-        <div class="container">
-          <a class="navbar-brand align-center fs-1 txt-gradient" href="#">
-            Owasiul
-          </a>
-          <button
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            class="navbar-toggler"
-            aria-controls="navbarNav"
-            aria-explaned="false"
-            aria-label="Toggle Navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Owasiul's Portfolio</title>
+</head>
+
+<body>
+  <!-- header start -->
+  <header>
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-lg w-100 custom-navbar">
+      <div class="container">
+        <a class="navbar-brand align-center fs-1 txt-gradient" href="#">
+          Owasiul
+        </a>
+        <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
+          aria-controls="navbarNav" aria-explaned="false" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav d-flex justify-content-end w-100 text-white">
+            <li class="nav-item active">
+              <a href="#" class="nav-link fs-5 mx-2 fw-medium active text-gradient text-white">
+                Home
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a href="#" class="nav-link fs-5 mx-2 fw-medium text-gradient text-white">
+                About
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a href="#" class="nav-link fs-5 mx-2 fw-medium text-gradient text-white">
+                Portfolio
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a href="#" class="nav-link fs-5 mx-2 fw-medium text-gradient text-white">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav end -->
+  </header>
+  <!-- header end -->
+
+  <!-- main strats -->
+  <main>
+    <!-- hero section -->
+    <div class="hero d-md-flex flex-md-row mt-4">
+      <!-- hero-txt -->
+      <div class="hero-txt ms-5">
+        <h1 class="text-white">Frontend</h1>
+        <h1 class="txt-gradient">Developer</h1>
+
+        <p class="text-white fw-medium fs-4">
+          Hi! I'm Owasiul Islam and I'm a Frontend Developer. I'm a student
+          and cerently learning bootstrap and javascript.
+        </p>
+        <!-- hero btn -->
+        <div class="h-txt-btn d-flex flex-row">
+          <!-- first btn -->
+          <button class="f-button px-4 py-2">
+            <span>Projects</span>
+            <span class="ms-2"><i class="fa-solid fa-share-from-square"></i></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav d-flex justify-content-end w-100 text-white">
-              <li class="nav-item active">
-                <a
-                  href="#"
-                  class="nav-link fs-5 mx-2 fw-medium active text-gradient text-white"
-                >
-                  Home
-                </a>
-              </li>
-              <li class="nav-item active">
-                <a
-                  href="#"
-                  class="nav-link fs-5 mx-2 fw-medium text-gradient text-white"
-                >
-                  About
-                </a>
-              </li>
-              <li class="nav-item active">
-                <a
-                  href="#"
-                  class="nav-link fs-5 mx-2 fw-medium text-gradient text-white"
-                >
-                  Portfolio
-                </a>
-              </li>
-              <li class="nav-item active">
-                <a
-                  href="#"
-                  class="nav-link fs-5 mx-2 fw-medium text-gradient text-white"
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- nav end -->
-    </header>
-    <!-- header end -->
 
-    <!-- main strats -->
-    <main>
-      <!-- hero section -->
-      <div class="hero d-md-flex flex-md-row mt-4">
-        <!-- hero-txt -->
-        <div class="hero-txt ms-5">
-          <h1 class="text-white">Frontend</h1>
-          <h1 class="txt-gradient">Developer</h1>
+          <!-- second btn -->
+          <button class="s-button px-4 py-2 mx-4">
+            <span>Contact</span>
+            <span class="ms-2"><i class="fa-solid fa-message"></i></span>
+          </button>
+        </div>
+        <!-- socail media -->
+        <div class="social-media mt-4">
+          <h2 class="text-white fw-medium fs-4">
+            Connect with me on social media :
+          </h2>
+          <a class="social-icon rounded-circle text-light mx-2 my-2" href="#"><i
+              class="text-light fs-2 fa-brands fa-facebook"></i></a>
+          <a class="social-icon rounded-circle text-light mx-2 my-2" href="#"><i
+              class="text-light fs-2 fa-brands fa-instagram"></i></a>
+          <a class="social-icon rounded-circle text-light mx-2 my-2" href="#"><i
+              class="text-light fs-2 fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <!-- hero-img -->
+      <div class="hero-img">
+        <img src="img/Computer.png" alt="" />
+      </div>
+    </div>
+    <!-- about section -->
+    <div class="about mt-4">
+      <div class="container">
+        <!-- header text -->
+        <h1 class="text-center text-white fs-1">About Me</h1>
+        <!-- wraper -->
+        <div class="d-md-flex flex-row-reverse justify-content-between">
+          <!-- about img -->
+          <div class="about-img d-flex align-center justify-content-center mt-4">
+            <img class="rounded-circle" src="img/Photo.png" alt="" />
+          </div>
+          <!-- about text -->
+          <div class="about-text mt-5">
+            <h1 class="txt-gradient fw-medium">Hello,I'm</h1>
+            <h1 class="text-white fw-medium">Owasiul Islam</h1>
+            <p class="text-white fs-5 fw-medium">
+              I'm a passionate web developer with a strong foundation in HTML,
+              CSS, Tailwind, and basic JavaScript. Recently I'm learning
+              JavaScript and bootstrap.I'm a student of Computer Science and
+              Engineering at Daffodil Polytechnic Institute. I'm a quick
+              learner and always eager to learn new things. I'm a hardworking
+              person and always try to give my best in every work. My goal is
+              to become a full-stack web developer and work in a reputed
+              software company.
+            </p>
+            <!-- cv and download btn -->
+            <div class="about-btn d-flex flex-row mt-4">
+              <!-- first btn -->
+              <button class="Portfolio-btn px-4 py-2 text-white border border-0">
+                <span class="mx-2"><i class="fa-solid fa-file"></i></span>
+                <span class="text-white">Download CV</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- portfolio section -->
+    <div class="portfolio-section mt-5">
+      <div class="p-header text-center">
+        <h1 class="t-gradient">My Portfolio</h1>
+        <p class="fs-5 text-white fw-medium m-0 m-auto mt-3">
+          Explore my journey through projects, certifications, and technical
+          expertise. Each section represents a milestone in my continuous
+          learning path.
+        </p>
+      </div>
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="container mt-5">
+        <h2 class="my-projects text-center txt-gradient mb-4">My Projects</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="portfolio-card">
+              <!-- first card -->
+              <img src="Projects/Flower-shop.png" alt="Project 1">
+              <div class="p-3">
+                <h4 class="text-white">Flower-shop</h4>
+                <p class="text-white">This website is build with HTML and CSS</p>
+                <a href="https://flower-shop-github-io.vercel.app/" class="btn btn-outline-light">View Project</a>
+              </div>
+            </div>
+          </div>
+          <!-- secound card -->
+          <div class="col-md-4 mb-4">
+            <div class="portfolio-card">
+              <img src="Projects/Nike-clone.png" alt="Project 2">
+              <div class="p-3">
+                <h4 class="text-white">Nike-clone</h4>
+                <p class="text-white">This website is build with HTML , CSS and JavaScript.</p>
+                <a href="https://nike-clone-github-io.vercel.app/" class="btn btn-outline-light">View Project</a>
+              </div>
+            </div>
+          </div>
+          <!-- Third card -->
+          <div class="col-md-4 mb-4">
+            <div class="portfolio-card">
+              <img src="Projects/Starbucks-clone.png" alt="Project 3">
+              <div class="p-3">
+                <h4 class="text-white"> Starbucks-clone</h4>
+                <p class="text-white">This website is build with HTML , CSS and Tailwind.</p>
+                <a href="https://starbucks-github-io-delta.vercel.app/" class="btn btn-outline-light">View Project</a>
+              </div>
+            </div>
+          </div>
+          <!-- Fourth card -->
+          <div class="col-md-4 mb-4">
+            <div class="portfolio-card">
+              <img src="Projects/Zubair kholin.png" alt="Project 3">
+              <div class="p-3">
+                <h4 class="text-white"> Zubuyer Kaolin</h4>
+                <p class="text-white">This website is build with HTML , CSS and Tailwind.</p>
+                <a href="https://zubuyer-kaolin-web-colone-github-io.vercel.app/" class="btn btn-outline-light">View
+                  Project</a>
+              </div>
+            </div>
+          </div>
+          <!-- Fifth card -->
+          <div class="col-md-4 mb-4">
+            <div class="portfolio-card">
+              <img src="Projects/_penguin-fashion-.jpeg" alt="Project 3">
+              <div class="p-3">
+                <h4 class="text-white">Penguin Fashion</h4>
+                <p class="text-white">This website is build with HTML , CSS and Tailwind.</p>
+                <a href="https://penguin-fashion-github-io.vercel.app/" class="btn btn-outline-light">View Project</a>
+              </div>
+            </div>
+          </div>
+          <!-- Sixth card -->
+          <div class="col-md-4 mb-4">
+            <div class="portfolio-card">
+              <img src="Projects/influencers-gears-.jpeg" alt="Project 3">
+              <div class="p-3">
+                <h4 class="text-white">Influencers Gears</h4>
+                <p class="text-white">This website is build with HTML and CSS .</p>
+                <a href="https://influencers-gears-github-io.vercel.app/" class="btn btn-outline-light">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <p class="text-white fw-medium fs-4">
-            Hi! I'm Owasiul Islam and I'm a Frontend Developer. I'm a student
-            and cerently learning bootstrap and javascript.
-          </p>
-          <!-- hero btn -->
-          <div class="h-txt-btn d-flex flex-row">
-            <!-- first btn -->
-            <button class="f-button px-4 py-2">
-              <span>Projects</span>
-              <span class="ms-2"
-                ><i class="fa-solid fa-share-from-square"></i
-              ></span>
-            </button>
-
-            <!-- second btn -->
-            <button class="s-button px-4 py-2 mx-4">
-              <span>Contact</span>
-              <span class="ms-2"><i class="fa-solid fa-message"></i></span>
-            </button>
-          </div>
-          <!-- socail media -->
-          <div class="social-media mt-4">
-            <h2 class="text-white fw-medium fs-4">
-              Connect with me on social media :
-            </h2>
-            <a class="social-icon rounded-circle text-light mx-2 my-2" href="#"
-              ><i class="text-light fs-2 fa-brands fa-facebook"></i
-            ></a>
-            <a class="social-icon rounded-circle text-light mx-2 my-2" href="#"
-              ><i class="text-light fs-2 fa-brands fa-instagram"></i
-            ></a>
-            <a class="social-icon rounded-circle text-light mx-2 my-2" href="#"
-              ><i class="text-light fs-2 fa-brands fa-github"></i
-            ></a>
-          </div>
-        </div>
-        <!-- hero-img -->
-        <div class="hero-img">
-          <img src="img/Computer.png" alt="" />
-        </div>
-      </div>
-      <!-- about section -->
-      <div class="about mt-4">
-        <div class="container">
-          <!-- header text -->
-          <h1 class="text-center text-white fs-1">About Me</h1>
-          <!-- wraper -->
-          <div class="d-md-flex flex-row-reverse justify-content-between">
-            <!-- about img -->
-            <div
-              class="about-img d-flex align-center justify-content-center mt-4"
-            >
-              <img class="rounded-circle" src="img/Photo.png" alt="" />
-            </div>
-            <!-- about text -->
-            <div class="about-text mt-5">
-              <h1 class="txt-gradient fw-medium">Hello,I'm</h1>
-              <h1 class="text-white fw-medium">Owasiul Islam</h1>
-              <p class="text-white fs-5 fw-medium">
-                I'm a passionate web developer with a strong foundation in HTML,
-                CSS, Tailwind, and basic JavaScript. Recently I'm learning
-                JavaScript and bootstrap.I'm a student of Computer Science and
-                Engineering at Daffodil Polytechnic Institute. I'm a quick
-                learner and always eager to learn new things. I'm a hardworking
-                person and always try to give my best in every work. My goal is
-                to become a full-stack web developer and work in a reputed
-                software company.
-              </p>
-              <!-- cv and download btn -->
-              <div class="about-btn d-flex flex-row mt-4">
-                <!-- first btn -->
-                <button
-                  class="Portfolio-btn px-4 py-2 text-white border border-0"
-                >
-                  <span class="mx-2"><i class="fa-solid fa-file"></i></span>
-                  <span class="text-white">Download CV</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- portfolio section -->
-      <div class="portfolio-section mt-5">
-        <div class="p-header text-center">
-          <h1 class="t-gradient">My Portfolio</h1>
-          <p class="fs-5 text-white fw-medium m-0 m-auto mt-3">
-            Explore my journey through projects, certifications, and technical
-            expertise. Each section represents a milestone in my continuous
-            learning path.
-          </p>
-        </div>
-        <!-- portfolio box -->
-        <div class="container border rounded-4 portfolio-box p-3 mt-5">
-          <div
-            class="portfolio-wraper row justify-content-center align-items-center text-white"
-          >
-            <!-- first box -->
-            <div class="portfolio-item col-12 col-md-4 text-center">
-              <div class="border-end border-start p-1">
-                <i class="fa-solid fs-3 my-2 fa-code"></i>
-                <h3 class="txt-edit fs-6 fs-md-2 my-2 my-md-0" title="projects">
-                  Projects
-                </h3>
-              </div>
-            </div>
-            <!-- second box -->
-            <div class="portfolio-item col-12 col-md-4 text-center">
-              <div class="border-end border-start p-1">
-                <i class="fa-solid fs-3 my-2 fa-medal"></i>
-                <h3 class="txt-edit fs-6 fs-md-2" title="Certificates">
-                  Certificates
-                </h3>
-              </div>
-            </div>
-            <!-- third box -->
-            <div class="portfolio-item col-12 col-md-4 text-center">
-              <div class="border-end border-start p-1">
-                <i class="fa-solid fs-3 my-2 fa-microchip"></i>
-                <h3 class="txt-edit fs-6 fs-md-2" title="Tech">Tech Stack</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- projects section -->
-      <div class="container my_projects mt-5">
-        <div class="card-wraper row justify-content-center align-items-center">
-          <!-- first-project -->
-          <div class="card mb-4 col-sm-12 col-md-5 mx-4">
-            <div class="card-image">
-              <a
-                href="https://nike-clone-github-io.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <iframe
-                  src="https://nike-clone-github-io.vercel.app/"
-                  onload="this.previousElementSibling.style.display='none';"
-                ></iframe>
-              </a>
-            </div>
-            <div class="card-content">
-              <h2 class="card-title">Nike-Clone</h2>
-              <p class="card-description">
-                Nike-Clone website which I made with Html , CSS , JavaScript
-              </p>
-            </div>
-            <div class="card-footer">
-              <button class="card-btn">
-                <a
-                  href="https://nike-clone-github-io.vercel.app/"
-                  class="card-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Live Preview
-                </a>
-              </button>
-            </div>
-          </div>
-          <!-- second-project -->
-          <div class="card mb-4 col-sm-12 col-md-5 mx-4">
-            <div class="card-image">
-              <a
-                href="https://starbucks-github-io-delta.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <iframe
-                  src="https://starbucks-github-io-delta.vercel.app/"
-                  onload="this.previousElementSibling.style.display='none';"
-                ></iframe>
-              </a>
-            </div>
-            <div class="card-content">
-              <h2 class="card-title">Starbucks-Clone</h2>
-              <p class="card-description">
-                Starbucks-Clone website which I made with Html , Tailwind CSS
-              </p>
-            </div>
-            <div class="card-footer">
-              <button class="card-btn">
-                <a
-                  href="https://starbucks-github-io-delta.vercel.app/"
-                  class="card-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Live Preview
-                </a>
-              </button>
-            </div>
-          </div>
-          <!-- third project -->
-          <div class="card mb-4 col-sm-12 col-md-5 mx-4">
-            <div class="card-image">
-              <a
-                href="https://penguin-fashion-github-io.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <iframe
-                  src="https://penguin-fashion-github-io.vercel.app/"
-                  onload="this.previousElementSibling.style.display='none';"
-                ></iframe>
-              </a>
-            </div>
-            <div class="card-content">
-              <h2 class="card-title">penguin-fashion</h2>
-              <p class="card-description">
-                penguin-fashion website which I made with Html , CSS , Tailwind
-                CSS
-              </p>
-            </div>
-            <div class="card-footer">
-              <button class="card-btn">
-                <a
-                  href="https://penguin-fashion-github-io.vercel.app/"
-                  class="card-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Live Preview
-                </a>
-              </button>
-            </div>
-          </div>
-          <!-- forth project -->
-          <div class="card mb-4 col-sm-12 col-md-5 mx-4">
-            <div class="card-image">
-              <a
-                href="https://zubuyer-kaolin-web-colone-github-io.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <iframe
-                  src="https://zubuyer-kaolin-web-colone-github-io.vercel.app/"
-                  onload="this.previousElementSibling.style.display='none';"
-                ></iframe>
-              </a>
-            </div>
-            <div class="card-content">
-              <h2 class="card-title">zubuyer-kaolin</h2>
-              <p class="card-description">
-                zubuyer-kaolin-web-colone which I made with Html , CSS ,
-                Tailwind CSS
-              </p>
-            </div>
-            <div class="card-footer">
-              <button class="card-btn">
-                <a
-                  href="https://zubuyer-kaolin-web-colone-github-io.vercel.app/"
-                  class="card-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Live Preview
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Certificates section -->
-      <div
-        class="container my_Certificates mt-5 text-center text-white fs-md-1 fs-5"
-      >
-        <p>I don't have Enough certificates to display here</p>
-      </div>
-      <!-- Tech Stack section -->
-      <div class="container my_Tech mt-5">
+      <!-- Tech Stack Section -->
+      <section id="tech-stack" class="container My_tech mt-5">
+        <h2 class="t-stack text-center mb-4">Tech Stack</h2>
         <div class="tech-wraper row">
           <!-- html -->
           <div class="t-card text-center mx-4 my-5 col-md-2 col-sm-6">
@@ -383,7 +254,7 @@
             <!-- t-img -->
             <img class="card-img" src="Icon/tailwind.svg" alt="html-img" />
             <!-- t-title -->
-            <h3 class="t-title my-4">Tailwind CSS</h3>
+            <h3 class="t-title my-4">Tailwind</h3>
           </div>
 
           <!-- Bootstrap -->
@@ -402,9 +273,9 @@
             <h3 class="t-title my-4">Vercel</h3>
           </div>
         </div>
-      </div>
-    </main>
+      </section>
+  </main>
 
-    <script src="js/bootstrap.bundle.js"></script>
-  </body>
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
 </html>
