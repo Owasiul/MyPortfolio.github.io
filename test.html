@@ -3,138 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <style>
-      .portfolio-container {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            padding: 2rem;
-        }
-        
-        .portfolio-item {
-            background-color: #1a1a2e;
-            border-radius: 12px;
-            padding: 2rem 3rem;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            min-width: 200px;
-        }
-        
-        .portfolio-item:hover {
-            transform: translateY(-5px);
-            background-color: #252542;
-        }
-        
-        .portfolio-icon {
-            font-size: 2rem;
-            color: #6c72cb;
-            margin-bottom: 1rem;
-            display: block;
-        }
-        
-        .portfolio-title {
-            color: #ffffff;
-            font-size: 1.1rem;
-            margin: 0;
-            font-weight: 500;
-        }
-    </style>
-    <title>Test</title>
+    .section {
+      display: none;
+  }
+  
+  .section.active {
+      display: block;
+  }</style>
 </head>
 <body>
-    <div class="hero container mt-5">
-        <div class="row align-items-center">
-          <!-- Hero Text - Full width on smaller screens, half width on larger screens -->
-          <div class="col-12 col-md-6 order-2 order-md-1">
-            <div class="hero-txt">
-              <h1>Frontend</h1>
-              <h1 class="txt-gradient">Developer</h1>
-      
-              <p class="text-dark fw-medium fs-4">
-                Hi! I'm Owasiul Islam and I'm a Frontend Developer. I'm a student
-                and currently learning bootstrap and javascript.
-              </p>
-              
-              <!-- Hero buttons -->
-              <div class="h-txt-btn d-flex flex-row">
-                <button class="f-button px-4 py-2">
-                  <span>Projects</span>
-                  <span class="ms-2"><i class="fa-solid fa-share-from-square"></i></span>
-                </button>
-      
-                <button class="s-button px-4 py-2 ms-4">
-                  <span>Contact</span>
-                  <span class="ms-2"><i class="fa-solid fa-message"></i></span>
-                </button>
-              </div>
-      
-              <!-- Social media -->
-              <div class="social-media mt-4">
-                <h2 class="text-dark fw-medium fs-4">Connect with me on social media:</h2>
-                <a class="social-icon fs-2 rounded-circle text-light" href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a class="social-icon fs-2 rounded-circle text-light ms-4" href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a class="social-icon fs-2 rounded-circle text-light ms-4" href="#"><i class="fa-brands fa-github"></i></a>
-              </div>
+    <div class="container mt-5">
+        <div class="portfolio-box">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                    <input type="radio" name="options" id="projects-btn" autocomplete="off" checked onclick="showSection('projects')"> Projects
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="options" id="certificates-btn" autocomplete="off" onclick="showSection('certificates')"> Certificates
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="options" id="tech-stack-btn" autocomplete="off" onclick="showSection('tech-stack')"> Tech Stack
+                </label>
+            </div>
+            <div id="projects" class="section active mt-3">
+                <h2>Projects</h2>
+                <p>Here are my projects...</p>
+                <section class="project">
+                  <div class="container my_projects mt-5">
+                    <div
+                      class="card-wraper row justify-content-center align-items-center"
+                    >
+                      <!-- first-project -->
+                      <div class="card mb-4 col-sm-12 col-md-5 mx-4">
+                        <div class="card-image">
+                          <a
+                            href="https://nike-clone-github-io.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <iframe
+                              src="https://nike-clone-github-io.vercel.app/"
+                              onload="this.previousElementSibling.style.display='none';"
+                            ></iframe>
+                          </a>
+                        </div>
+                        <div class="card-content">
+                          <h2 class="card-title">Nike-Clone</h2>
+                          <p class="card-description">
+                            Nike-Clone website which I made with Html , CSS , JavaScript
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <button class="card-btn">
+                            <a
+                              href="https://nike-clone-github-io.vercel.app/"
+                              class="card-button"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Live Preview
+                            </a>
+                          </button>
+                        </div>
+                      </div>
+                      <!-- second-project -->
+                      <div class="card mb-4 col-sm-12 col-md-5 mx-4">
+                        <div class="card-image">
+                          <a
+                            href="https://starbucks-github-io-delta.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <iframe
+                              src="https://starbucks-github-io-delta.vercel.app/"
+                              onload="this.previousElementSibling.style.display='none';"
+                            ></iframe>
+                          </a>
+                        </div>
+                        <div class="card-content">
+                          <h2 class="card-title">Starbucks-Clone</h2>
+                          <p class="card-description">
+                            Starbucks-Clone website which I made with Html , Tailwind CSS
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <button class="card-btn">
+                            <a
+                              href="https://starbucks-github-io-delta.vercel.app/"
+                              class="card-button"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Live Preview
+                            </a>
+                          </button>
+                        </div>
+                      </div>
+                      <!-- third project -->
+                      <div class="card mb-4 col-sm-12 col-md-5 mx-4">
+                        <div class="card-image">
+                          <a
+                            href="https://penguin-fashion-github-io.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <iframe
+                              src="https://penguin-fashion-github-io.vercel.app/"
+                              onload="this.previousElementSibling.style.display='none';"
+                            ></iframe>
+                          </a>
+                        </div>
+                        <div class="card-content">
+                          <h2 class="card-title">penguin-fashion</h2>
+                          <p class="card-description">
+                            penguin-fashion website which I made with Html , CSS ,
+                            Tailwind CSS
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <button class="card-btn">
+                            <a
+                              href="https://penguin-fashion-github-io.vercel.app/"
+                              class="card-button"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Live Preview
+                            </a>
+                          </button>
+                        </div>
+                      </div>
+                      <!-- forth project -->
+                      <div class="card mb-4 col-sm-12 col-md-5 mx-4">
+                        <div class="card-image">
+                          <a
+                            href="https://zubuyer-kaolin-web-colone-github-io.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <iframe
+                              src="https://zubuyer-kaolin-web-colone-github-io.vercel.app/"
+                              onload="this.previousElementSibling.style.display='none';"
+                            ></iframe>
+                          </a>
+                        </div>
+                        <div class="card-content">
+                          <h2 class="card-title">zubuyer-kaolin</h2>
+                          <p class="card-description">
+                            zubuyer-kaolin-web-colone which I made with Html , CSS ,
+                            Tailwind CSS
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <button class="card-btn">
+                            <a
+                              href="https://zubuyer-kaolin-web-colone-github-io.vercel.app/"
+                              class="card-button"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Live Preview
+                            </a>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+            </div>
+            <div id="certificates" class="section mt-3">
+                <h2>Certificates</h2>
+                <section
+        class="certificates"
+      >
+        <div
+          class="container my_Certificates mt-5 text-center text-white fs-md-1 fs-5"
+        >
+          <p>I don't have Enough certificates to display here</p>
+        </div>
+      </section>
+            </div>
+            <div id="tech-stack" class="section mt-3">
+                <h2>Tech Stack</h2>
+                <section
+        class="tech-stack"
+      >
+        <div class="container my_Tech mt-5">
+          <div class="tech-wraper row">
+            <!-- html -->
+            <div class="t-card text-center mx-4 my-5 col-md-2 col-sm-6">
+              <!-- t-img -->
+              <img class="card-img" src="Icon/html.svg" alt="html-img" />
+              <!-- t-title -->
+              <h3 class="t-title my-4">HTML</h3>
+            </div>
+
+            <!-- CSS -->
+            <div class="t-card text-center mx-4 my-5 col-md-2 col-sm-6">
+              <!-- t-img -->
+              <img class="card-img" src="Icon/css.svg" alt="html-img" />
+              <!-- t-title -->
+              <h3 class="t-title my-4">CSS</h3>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="t-card text-center mx-4 my-5 col-md-2 col-sm-6">
+              <!-- t-img -->
+              <img class="card-img" src="Icon/javascript.svg" alt="html-img" />
+              <!-- t-title -->
+              <h3 class="t-title my-4">JavaScript</h3>
+            </div>
+
+            <!-- Tailwind CSS -->
+            <div class="t-card text-center mx-4 my-5 col-md-2 col-sm-6">
+              <!-- t-img -->
+              <img class="card-img" src="Icon/tailwind.svg" alt="html-img" />
+              <!-- t-title -->
+              <h3 class="t-title my-4">Tailwind CSS</h3>
+            </div>
+
+            <!-- Bootstrap -->
+            <div class="t-card text-center mx-4 my-5 col-md-2 col-sm-6">
+              <!-- t-img -->
+              <img class="card-img" src="Icon/bootstrap.svg" alt="html-img" />
+              <!-- t-title -->
+              <h3 class="t-title my-4">Bootstrap</h3>
+            </div>
+
+            <!-- Vercel -->
+            <div class="t-card text-center mx-4 my-5 col-md-2 col-sm-6">
+              <!-- t-img -->
+              <img class="card-img" src="Icon/vercel.svg" alt="html-img" />
+              <!-- t-title -->
+              <h3 class="t-title my-4">Vercel</h3>
             </div>
           </div>
-      
-          <!-- Hero Image - Full width on smaller screens, half width on larger screens -->
-          <div class="col-12 col-md-6 order-1 order-md-2 mb-4 mb-md-0">
-            <div class="hero-img">
-              <img src="img/Computer.png" alt="" class="img-fluid" />
+        </div>
+      </section>
             </div>
-          </div>
-        </div>
-      </div>
-      <!-- hero end -->
-      <div class="portfolio-container">
-        <div class="portfolio-item">
-            <i class="bi bi-folder portfolio-icon"></i>
-            <h3 class="portfolio-title">Projects</h3>
-        </div>
-        
-        <div class="portfolio-item">
-            <i class="bi bi-award portfolio-icon"></i>
-            <h3 class="portfolio-title">Certificates</h3>
-        </div>
-        
-        <div class="portfolio-item">
-            <i class="bi bi-stack portfolio-icon"></i>
-            <h3 class="portfolio-title">Tech Stack</h3>
         </div>
     </div>
-    <!-- Portfolio items end -->
-    <div class="container my_Tech mt-5">
-      <div class="tech-wrapper row justify-content-center align-items-center">
-        <div class="t-card text-center mx-4 my-5 col-md-2 col-sm-4">
-          <img class="card-img" src="Icon/html.svg" alt="HTML5 icon">
-          <h3 class="t-title my-4">HTML</h3>
-        </div>
-        <div class="t-card text-center mx-4 my-5 col-md-2 col-sm-4">
-          <img class="card-img" src="Icon/css.svg" alt="CSS3 icon">
-          <h3 class="t-title my-4">CSS</h3>
-        </div>
-        <div class="t-card text-center mx-4 my-5 col-md-2 col-sm-4">
-          <img class="card-img" src="Icon/javascript.svg" alt="JavaScript icon">
-          <h3 class="t-title my-4">JavaScript</h3>
-        </div>
-        <div class="t-card text-center mx-4 my-5 col-md-2 col-sm-6">
-          <img class="card-img" src="Icon/tailwind.svg" alt="Tailwind CSS icon">
-          <h3 class="t-title my-4">Tailwind CSS</h3>
-        </div>
-        <div class="t-card text-center mx-4 my-5 col-md-2 col-sm-4">
-          <img class="card-img" src="Icon/bootstrap.svg" alt="Bootstrap icon">
-          <h3 class="t-title my-4">Bootstrap</h3>
-        </div>
-        <div class="t-card text-center mx-4 my-5 col-md-2 col-sm-4">
-          <img class="card-img" src="Icon/vercel.svg" alt="Vercel icon">
-          <h3 class="t-title my-4">Vercel</h3>
-        </div>
-      </div>
-    </div>
-    <script src="js/bootstrap.bundle.js"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      function showSection(sectionId) {
+    // Hide all sections
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => section.classList.remove('active'));
+
+    // Show the selected section
+    const activeSection = document.getElementById(sectionId);
+    activeSection.classList.add('active');
+}
+
+// Initially show the projects section
+document.addEventListener('DOMContentLoaded', () => {
+    showSection('projects');
+});
+    </script>
 </body>
 </html>
